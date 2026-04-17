@@ -40,8 +40,8 @@ except Exception as e:
 
 # --- 3. FIX CURRENCY FORMATTER ---
 def format_currency(x):
-    if x >= 1_000_000:
-        return f'Rp {x/1_000_000:.2f} M'
+    if x >= 1_000_000_000:
+        return f'Rp {x/1_000_000_000:.2f} M'
     elif x >= 1_000:
         return f'Rp {x/1_000:.1f} k'
     return f'Rp {x:,.0f}'
